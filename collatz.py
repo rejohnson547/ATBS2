@@ -9,12 +9,14 @@ def collatz(number):
     	print(answer)
     if answer != 1:
     	collatz(answer)
+   
 
 
 try:
 	num = int(input('Please enter a number: '))
 except ValueError:
 	print('You did not enter a number:')
+else:
 	collatz(num)
  
-collatz(num)
+
