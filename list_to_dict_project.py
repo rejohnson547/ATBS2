@@ -10,7 +10,7 @@ def add_to_inventory(inventory, added_items):
     dagger = 0
     ruby = 0
     for item in dragon_loot:
-        if 'gold coin' in dragon_loot:
+        if 'gold coin' == item in dragon_loot:
             coins += 1
             
     #for i in dragon_loot:
