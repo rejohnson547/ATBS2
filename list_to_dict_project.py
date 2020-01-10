@@ -13,13 +13,15 @@ def add_to_inventory(inventory, added_items):
         if 'gold coin' == item in dragon_loot:
             coins += 1
             
-    #for i in dragon_loot:
-        if 'dagger' in dragon_loot:
+    for i in dragon_loot:
+        if 'dagger' == i in dragon_loot:
             dagger += 1
-    #for v in dragon_loot:
-        if 'ruby' in dragon_loot:
+    for v in dragon_loot:
+        if 'ruby' == v in dragon_loot:
             ruby += 1
-    print(coins)
+    coins = coins + inv['gold coin']
+    for k, v in inv.items():
+    	print(v, k)
 
 add_to_inventory(inv, dragon_loot)
     
