@@ -20,6 +20,9 @@ def add_to_inventory(inventory, added_items):
         if 'ruby' == v in dragon_loot:
             ruby += 1
     coins = coins + inv['gold coin']
+    for items in dragon_loot:
+        if items not in inv:
+            inv.setdefault(items, 1)
     for k, v in inv.items():
     	print(v, k)
 
