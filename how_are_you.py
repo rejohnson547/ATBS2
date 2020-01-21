@@ -1,5 +1,6 @@
 # 01/16/2020
 
+import pyperclip
 print('How are you?')
 feeling = input()
 if feeling.lower() == 'great':
